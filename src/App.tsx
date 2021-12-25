@@ -26,7 +26,7 @@ function loadImage(file: File): Promise<InputImage> {
 }
 
 function computeChangeRows(imageData: ImageData): [number, number][] {
-  const rowLen = imageData.width * 4;
+  const rowLen = imageData.width * 1;
   const changeRows: [number, number][] = [];
   let lastChangeY = 0;
   for (let y = 1; y < imageData.height; y++) {
@@ -89,12 +89,12 @@ function App() {
     if (!ctx) {
       return;
     }
-    ctx.fillStyle = "white";
+    ctx.fillStyle = "cyan";
     ctx.fillRect(0, 0, width, height);
     ctx.drawImage(input.image, 0, 0);
     const changeRows = computeChangeRows(ctx.getImageData(0, 0, width, height));
     changeRows.forEach(([y0, y1], i) => {
-      ctx.fillStyle = "red";
+      ctx.fillStyle = "cyan";
       ctx.fillRect(width / 2 + (i % 2) * 5, y0, 2, y1 - y0);
     });
     const runs = changeRows.map(([a, b]) => b - a);
@@ -107,8 +107,8 @@ function App() {
     if (!(input && canvas)) {
       return;
     }
-    const width = (canvas.width = input.image.width / scaleFactor);
-    const height = (canvas.height = input.image.height / scaleFactor);
+    const width = (canvas.width = input.image.width * 8);
+    const height = (canvas.height = input.image.height * 8);
     const ctx = canvas.getContext("2d");
     if (!ctx) {
       return;
@@ -119,21 +119,15 @@ function App() {
   return (
     <div id="container">
       <div>
-        <div className="help">
-          This app detects the scale factor of an upscaled pixel art image and
-          scales it down for you. You can right-click the result image to save
-          or copy it.
-          <br />
-          Implementation: <a href="https://twitter.com/akx">@akx</a>, algorithm:{" "}
-          <a href="https://twitter.com/ochrons">@ochrons</a>
-        </div>
+              <div className="help">Upscale your Solsunsets here for high quality printing:<br /> Output: 16000 x 5344px (3:1) and 6144 x 6144px (1:1)
+                  <br /> After upload the image just right click + save.
+                  <br /><a href="https://gallery.solsunsets.com/">&#x2C2; Home</a>&nbsp; &nbsp; &nbsp;<a href="https://gallery.solsunsets.com/">Gallery &#707;</a>
+              </div>
         <label>
-          Pick a pixel art image:&nbsp;
+                  
           <input type="file" accept="image/*" onChange={handleImageChange} />
         </label>
       </div>
-      <div>Scale factor guess: {scaleFactor}&times;</div>
-      <canvas ref={originalCanvasRef} />
       <canvas ref={scaledCanvasRef} style={{ imageRendering: "pixelated" }} />
     </div>
   );
