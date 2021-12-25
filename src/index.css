@@ -1,20 +1,19 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: monospace,"Press Start\ 2P", "Roboto";
 }
 
 body {
-  font-family: "Roboto";
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1.4;
-  background-color:black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.4;
+    background-color: black;
 }
 
 a {text-decoration:none;
    color:cyan;
    line-height:40px;
-   font-size:1.2em;
+   font-size:1em;
 }
 
 label {
@@ -24,7 +23,7 @@ label {
     color: cyan;
     height:120px;
     width: 350px;
-    margin-left: 470px;
+    margin-left: 580px;
     justify-content: center;
     text-align: left;
     align-items: center;
@@ -33,12 +32,12 @@ label {
 }
 
 .help {
-    padding: 0.9em;
+    padding: 0.8em;
     display: -webkit-inline-box;
     position: absolute;
     color: cyan;
     height:120px;
-    width: 440px;
+    width: 520px;
     margin-left: 2vw;
     justify-content: center;
     text-align: left;
