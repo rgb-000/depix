@@ -120,7 +120,7 @@ function App() {
     <div id="container">
       <div>
               <div className="help">Upscale your Solsunsets here for high quality printing:<br /> Output: 16000 x 5344px (3:1) and 6144 x 6144px (1:1)
-                  <br /> After upload the image just right click + save.
+                  <br /> After upload the image, just right click + save.
                   <br /><a href="https://solsunsets.com/">&#x2C2; Home</a>&nbsp; &nbsp; &nbsp;<a href="https://gallery.solsunsets.com/">Gallery &#707;</a>
               </div>
         <label>
