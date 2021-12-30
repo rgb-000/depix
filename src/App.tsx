@@ -119,14 +119,14 @@ function App() {
   return (
     <div id="container">
       <div>
-              <div className="help">Upscale your Solsunsets here for high quality printing:<br /> Output: 16000 x 5344px (3:1) and 6144 x 6144px (1:1)
-                  <br /> After upload the image, just right click + save.
-                  <br /><a href="https://solsunsets.com/">&#x2C2; Home</a>&nbsp; &nbsp; &nbsp;<a href="https://gallery.solsunsets.com/">Gallery &#707;</a>
+              <div className="help">                <span class="blog-right-title">Pixel art upscale tool</span><br/><br/>
+                  <span>Upscale your Solsunsets (or any pixel art) here for high quality printing output. <br/>After upload the image, just right click + save.</span><ul><li>Output for banner: 16000 x 5344px (3:1)</li><li>Output for pfp: 6144 x 6144px (1:1)
+                </li></ul>
               </div>
-        <label>
+        <div><label>
                   
           <input type="file" accept="image/*" onChange={handleImageChange} />
-        </label>
+        </label></div>
       </div>
       <canvas ref={scaledCanvasRef} style={{ imageRendering: "pixelated" }} />
     </div>

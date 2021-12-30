@@ -1,71 +1,25 @@
-* {
-    box-sizing: border-box;
-    font-family: monospace,"Press Start\ 2P", "Roboto";
-}
-
-body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    line-height: 1.4;
-    background-color: black;
-}
-
-a {text-decoration:none;
-   color:cyan;
-   line-height:40px;
-   font-size:1em;
-}
 
 label {
-    padding: 1em;
     display: -webkit-inline-box;
-    position: absolute;
-    color: cyan;
-    height:120px;
-    width: 350px;
-    margin-left: 580px;
-    justify-content: center;
-    text-align: left;
-    align-items: center;
-    border-left: 3px solid cyan;
-    margin-top: 2vh;
+  
 }
 
-.help {
-    padding: 0.8em;
-    display: -webkit-inline-box;
-    position: absolute;
-    color: cyan;
-    height:120px;
-    width: 520px;
-    margin-left: 2vw;
-    justify-content: center;
-    text-align: left;
-    align-items: center;
-    border-left: 3px solid cyan;
-    margin-top: 2vh;
-}
+.help span {align-self:flex-end;}
+
 
 input {
     display: block;
-    margin: 0.5em;
-    padding: 1em;
-    width: 100%;
-    background: #000;
-    color: cyan;
-}
-
-input {
+    margin: 0;
+    width: 40.8vw;
+    border: 1px dashed black;
     display: block;
-    margin: 0.5em;
+    margin-top: 1vh;
     padding: 1em;
-    width: 100%;
-    background: #000;
-    color: cyan;
 }
 
 
 canvas {
+  
   margin: 0em;
 
 }
@@ -74,9 +28,21 @@ canvas {
     max-width:contain;
 }
 
+.blog {
+
+    grid-template-columns: 12% 22% 44% 22% !important;
+
+
+}
+
 #container {
-    display: block;
-    background-color: black;
+    display: grid;
+    height: 300px;
+    width: 41vw;
+    align-content: stretch;
+    align-items: end;
+    justify-items: stretch;
+    justify-content: start;
 }
 
     #container img {
@@ -88,12 +54,11 @@ canvas {
     }
 
     #container > canvas {
-        justify-self: center;
-        margin-left: auto;
-        margin-right: auto;
-        max-inline-size: -webkit-fill-available;
-        margin-top: 200px;
-        /* margin-bottom: auto; */
+        position: fixed;
+        left: 2vw;
+        top: 400px;
+        width: 96vw;
+    
     }
 
     #container > div {
@@ -101,9 +66,28 @@ canvas {
    
     }
 
-#root {
-    box-sizing: border-box;
-    background-color: black;
-    overflow: hidden;
-}
 
+
+
+@media all and (orientation: portrait) {
+
+    #container, input {
+    width:96vw;}
+
+        .blog {
+        max-height: 50vh !important;
+        display: block;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        position: fixed;
+        top: 10vh !important;
+    }
+
+    #container > canvas {
+        position: fixed;
+        left: 2vw;
+        top: 70vh;
+        width: 96vw;
+    }
+    .blog-right {border-top: 0px solid white !important;
+    }}
