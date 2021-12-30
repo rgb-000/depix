@@ -5,6 +5,13 @@ label {
 }
 
 .help span {align-self:flex-end;}
+.help h3 {
+    text-transform:uppercase;
+    font-size:1.1em;
+    font-weight:400;
+    padding:0px;
+    margin:0;
+}
 
 
 input {
@@ -37,7 +44,7 @@ canvas {
 
 #container {
     display: grid;
-    height: 300px;
+    height: 240px;
     width: 41vw;
     align-content: stretch;
     align-items: end;
@@ -54,11 +61,12 @@ canvas {
     }
 
     #container > canvas {
+        border: 1px dashed #2f4f4f;
         position: fixed;
         left: 2vw;
-        top: 400px;
+        top: 300px;
         width: 96vw;
-    
+        height: 32vw;
     }
 
     #container > div {
@@ -67,12 +75,28 @@ canvas {
     }
 
 
-
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
+}
 
 @media all and (orientation: portrait) {
 
-    #container, input {
-    width:96vw;}
+    #container {
+        margin-top:-50px;
+    width:88vw;
+
+    }
+
+    input {
+        width: 86vw;
+    }
+
 
         .blog {
         max-height: 50vh !important;
@@ -85,9 +109,9 @@ canvas {
 
     #container > canvas {
         position: fixed;
-        left: 2vw;
-        top: 70vh;
-        width: 96vw;
+        left: 6vw;
+        top: 50vh;
+        width: 88vw;
     }
     .blog-right {border-top: 0px solid white !important;
     }}

@@ -119,8 +119,8 @@ function App() {
   return (
     <div id="container">
       <div>
-              <div className="help">                <span className="blog-right-title">Pixel art upscale tool</span><br/><br/>
-                  <span>Upscale your Solsunsets (or any pixel art) here for high quality printing output. <br/>After upload the image, just right click + save.</span><ul><li>Output for banner: 16000 x 5344px (3:1)</li><li>Output for pfp: 6144 x 6144px (1:1)
+              <div className="help">                <span><h3>Pixel art upscale tool</h3></span><br/>
+                  <span>Upscale your Solsunsets (or any pixel art) here for high quality printing output. Just upload the image, then right click + save.</span><ul><li>Output for banner: 16000 x 5344px (3:1)</li><li>Output for pfp: 6144 x 6144px (1:1)
                 </li></ul>
               </div>
         <div><label>
