@@ -67,7 +67,7 @@ canvas {
         top: 300px;
         width: 96vw;
         min-height: calc(96vw / 3);
-        height:auto;
+        height:fit-content;
     }
 
     #container > div {
