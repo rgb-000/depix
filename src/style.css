@@ -24,7 +24,7 @@ body {
     font-size: 1em;
     z-index: 10;
     font-weight: 400;
-    color: #2f4f4f;
+    color: #000001;
     margin: 0px;
     margin-top: 12px;
 }
@@ -114,7 +114,7 @@ body {
     position: relative;
     height: 100%;
     width: 100%;
-    border-bottom: 3px solid #2f4f4f;
+    border-bottom: 3px solid #000001;
     letter-spacing: 0.3px;
     text-decoration: none;
     padding-bottom: 8px;
@@ -164,7 +164,7 @@ body {
     }
 
 .blog-part:not(:last-child) {
-    border-right: 3px solid #2f4f4f;
+    border-right: 3px solid #000001;
 }
 
 
@@ -226,7 +226,7 @@ a:hover {
 
 
 .small-title {
-    border-bottom: 3px solid #2f4f4f;
+    border-bottom: 3px solid #000001;
     margin-bottom: 20px;
     max-height: 3em;
     align-items: center;
@@ -258,7 +258,7 @@ a:hover {
     }
 
 .blog-header-container {
-    border-right: 3px solid #2f4f4f;
+    border-right: 3px solid #000001;
 }
 
 
@@ -299,8 +299,8 @@ a:hover {
 
 .blog-right-title {
     text-transform: uppercase;
-    border-top: 3px solid #2f4f4f;
-    border-bottom: 3px solid #2f4f4f;
+    border-top: 3px solid #000001;
+    border-bottom: 3px solid #000001;
     width: 19.5vw;
     padding-top: 8px;
     height: 43px;
@@ -312,7 +312,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 3px solid #2f4f4f;
+    border-bottom: 3px solid #000001;
     letter-spacing: -1px;
 }
 
@@ -352,13 +352,13 @@ display:none;
 
 
 a {
-    color: #2f4f4f !important;
+    color: #000001 !important;
     text-decoration: none;
 }
 
 
     a:visited {
-        color: #2f4f4f;
+        color: #000001;
     }
 
 
@@ -510,7 +510,7 @@ a {
 
     .tabs input[type=radio]:checked + label, .tabs-m input[type=radio]:checked + label {
         font-weight: 600;
-        border-left: 2px solid #2f4f4f;
+        border-left: 2px solid #000001;
         padding-left: 7px;
     }
 
@@ -617,8 +617,8 @@ a {
 
     .blog-right-title {
         text-transform: uppercase;
-        border-top: 0px solid #2f4f4f;
-        border-bottom: 0px solid #2f4f4f;
+        border-top: 0px solid #000001;
+        border-bottom: 0px solid #000001;
         width: 96vw;
         font-size: 1.2em;
         padding-top: 0px;
@@ -679,7 +679,7 @@ a {
     }
 
     .blog-right {
-        border-top: 3px solid #2f4f4f;
+        border-top: 3px solid #000001;
         padding-top: 2vh;
         margin-bottom: 2vh;
         padding-bottom: 2vh;
@@ -717,7 +717,7 @@ a {
     }
 
     .blog-part:not(:last-child), .blog-header-container {
-        border-right: 0px solid #2f4f4f;
+        border-right: 0px solid #000001;
     }
 
 
@@ -776,10 +776,10 @@ a {
 
 .navbar-btn {
     background: #fff9ea;
-    color: #2f4f4f;
+    color: #000001;
     font-size: 1.2em;
     border-radius: 3px;
-    border: 2px solid #2f4f4f;
+    border: 2px solid #000001;
     padding: 0 4px;
     font-weight: 900;
     z-index: 1000;
@@ -808,7 +808,7 @@ a {
 .nav {
     margin-top: -20vh;
     z-index: 10;
-    border-bottom: 3px solid #2f4f4f;
+    border-bottom: 3px solid #000001;
 }
 
 .nav-link {
@@ -817,7 +817,7 @@ a {
     padding: 2vh;
     text-decoration: none;
     justify-content: center;
-    border-top: 3px solid #2f4f4f;
+    border-top: 3px solid #000001;
     flex-wrap: nowrap;
     align-content: flex-end;
     align-items: stretch;
@@ -833,7 +833,7 @@ li.nav-item:first-child {
 
 li.nav-item.last {
     display: flex;
-    border-top: 3px solid #2f4f4f;
+    border-top: 3px solid #000001;
     padding: 1vh;
     justify-content: space-between;
     padding-left: 16vw;
