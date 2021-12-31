@@ -66,7 +66,8 @@ canvas {
         left: 2vw;
         top: 300px;
         width: 96vw;
-        height: 32vw;
+        min-height: calc(96vw / 3);
+        height:auto;
     }
 
     #container > div {
@@ -112,6 +113,8 @@ ul {
         left: 6vw;
         top: 50vh;
         width: 88vw;
+        min-height: calc(88vw / 3);
+        height: auto;
     }
     .blog-right {border-top: 0px solid white !important;
     }}
