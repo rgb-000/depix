@@ -114,7 +114,7 @@ ul {
         top: 50vh;
         width: 88vw;
         min-height: calc(88vw / 3);
-        height: auto;
+        height: fit-content;
     }
     .blog-right {border-top: 0px solid white !important;
     }}
